@@ -7,19 +7,20 @@ var __spreadArray = (this && this.__spreadArray) || function (to, from, pack) {
     }
     return to.concat(ar || Array.prototype.slice.call(from));
 };
+// ➡️ exemplo básico retornando a matrix 0 
 var pessoa;
 pessoa = ['augusto', 33];
 console.log(pessoa[0]);
 //* Lista heterogênea de Tupla : 
 var lista = ["a", "b", "c"];
 console.log(__spreadArray([], lista, true), ["dd", "ddsd"]);
-//? parâmetros + argumentos com Tuplas : 
+//? ➡️ parâmetros + argumentos com Tuplas : 
 var opa = 'olá mundo';
 function hellow(params) {
     return console.log(params.split('').reverse().join(''));
 }
 hellow(opa);
-//! tuplas dentro das funçôes : 
+//!➡️ tuplas dentro das funçôes : 
 function listarPessoas(nomes, idades) {
     return __spreadArray(__spreadArray([], nomes, true), idades, true);
 }
