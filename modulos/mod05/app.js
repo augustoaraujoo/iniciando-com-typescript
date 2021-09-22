@@ -28,3 +28,24 @@ function searchArray(linguagens) {
     }
 }
 searchArray(linguagensArray);
+var allNumbers = 10;
+function calcAllNumbers(params) {
+    for (var i = 0; i <= params; i++) {
+        if (i % 2 === 0) {
+            console.log('par', i);
+        }
+        else {
+            console.log('impar', i);
+        }
+    }
+}
+calcAllNumbers(10);
+function calcMatrix(params) {
+    for (var i = 0; i <= params; i++) {
+        if (i > 10) {
+            var a = i / 30;
+            return console.log(a);
+        }
+    }
+}
+calcMatrix(20);

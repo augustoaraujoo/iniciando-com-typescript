@@ -26,3 +26,25 @@ function searchArray(linguagens: string[]) {
     }
 }
 searchArray(linguagensArray)
+
+let allNumbers: number = 10
+function calcAllNumbers(params: number) {
+    for (let i = 0; i <= params; i++) {
+        if (i % 2 === 0) {
+            console.log('par', i);
+        } else {
+            console.log('impar', i);
+        }
+    }
+}
+calcAllNumbers(10)
+
+function calcMatrix(params: number) {
+    for (let i = 0; i <= params; i++) {
+        if (i > 10) {
+            let a = i / 30;
+            return console.log(a);
+        }
+    }
+}
+calcMatrix(20)
